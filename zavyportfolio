@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zavy's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">ZAVY</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="cars.html">cars</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2 class="fade-in">dev mind / car soul</h2>
+      <p class="slide-in">roblox games. discord bots. websites. engines. all coded by hand.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://discord.gg/YOURSERVER" target="_blank">discord</a>
+      <a href="https://www.roblox.com/groups/YOURGROUPID" target="_blank">roblox group</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
