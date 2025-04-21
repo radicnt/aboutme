@@ -4,24 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zavy's Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #111;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #aaa;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .hero-content h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease-out;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      color: #bbb;
+      animation: fadeIn 2s ease-in;
+    }
+
+    footer {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      font-size: 14px;
+    }
+
+    .footer-links a {
+      display: block;
+      text-decoration: none;
+      color: #888;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #0ff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      .hero-content h2 { font-size: 28px; }
+      .hero-content p { font-size: 16px; }
+      .nav-links { gap: 15px; }
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
     <h1 class="logo">ZAVY</h1>
     <ul class="nav-links">
-      <li><a href="index.html">home</a></li>
-      <li><a href="about.html">about</a></li>
-      <li><a href="projects.html">projects</a></li>
-      <li><a href="cars.html">cars</a></li>
-      <li><a href="contact.html">contact</a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">projects</a></li>
+      <li><a href="#">cars</a></li>
+      <li><a href="#">contact</a></li>
     </ul>
   </nav>
 
   <section class="hero">
     <div class="hero-content">
-      <h2 class="fade-in">dev mind / car soul</h2>
-      <p class="slide-in">roblox games. discord bots. websites. engines. all coded by hand.</p>
+      <h2>dev mind / car soul</h2>
+      <p>roblox games. discord bots. websites. engines. all coded by hand.</p>
     </div>
   </section>
 
@@ -31,7 +135,5 @@
       <a href="https://www.roblox.com/groups/YOURGROUPID" target="_blank">roblox group</a>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
